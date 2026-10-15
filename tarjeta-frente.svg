@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550" width="85mm" height="55mm">
+  <defs>
+    <!-- Gradientes principales -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9b5cff"/>
+      <stop offset="60%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="hotGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3ea5"/>
+      <stop offset="50%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0919"/>
+      <stop offset="50%" stop-color="#07060d"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <radialGradient id="glowViolet" cx="15%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#9b5cff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowCyan" cx="85%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Patrón de rejilla sutil de estudio -->
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(155, 92, 255, 0.07)" stroke-width="0.8"/>
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', 'Montserrat', 'Helvetica Neue', Arial, sans-serif; }
+    .font-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+  </style>
+
+  <!-- Fondo de la tarjeta -->
+  <rect width="850" height="550" fill="url(#cardBg)"/>
+  <rect width="850" height="550" fill="url(#gridPattern)"/>
+
+  <!-- Orbes de luz de fondo -->
+  <circle cx="120" cy="120" r="260" fill="url(#glowViolet)"/>
+  <circle cx="750" cy="450" r="280" fill="url(#glowCyan)"/>
+
+  <!-- Borde decorativo fino estilo tech / corte de seguridad -->
+  <rect x="25" y="25" width="800" height="500" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Onda decorativa de fondo (audio waveform sutil) -->
+  <g opacity="0.12">
+    <path d="M 40 460 Q 150 440, 260 480 T 480 470 T 700 450 T 810 470" fill="none" stroke="url(#hotGrad)" stroke-width="2"/>
+    <path d="M 40 475 Q 180 495, 320 460 T 560 480 T 780 465" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+  </g>
+
+  <!-- LOGO + MARCA (Arriba a la izquierda) -->
+  <g transform="translate(60, 60)">
+    <!-- Isotipo LM con gradiente -->
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="url(#neonGrad)"/>
+    <text x="28" y="38" class="font-display" font-size="24" font-weight="800" fill="#07060d" text-anchor="middle" letter-spacing="0.5">LM</text>
+
+    <!-- Nombre de marca -->
+    <text x="72" y="32" class="font-display" font-size="22" font-weight="500" fill="#ecebf5" letter-spacing="0.5">
+      luis<tspan font-weight="800" fill="#22d3ee">m</tspan>music
+    </text>
+    <text x="72" y="50" class="font-mono" font-size="11" font-weight="500" fill="#a7a3bf" letter-spacing="2">AUDIO · MUSIC · TECH</text>
+  </g>
+
+  <!-- DISTINTIVO PREMIO ARPA (Arriba a la derecha) -->
+  <g transform="translate(570, 62)">
+    <rect x="0" y="0" width="220" height="38" rx="10" fill="rgba(155, 92, 255, 0.12)" stroke="rgba(155, 92, 255, 0.4)" stroke-width="1"/>
+    <!-- Icono trofeo / laurel -->
+    <path d="M 18 13 L 26 13 A 5 5 0 0 1 21 22 A 5 5 0 0 1 16 13 Z M 14 14 L 11 14 A 3 3 0 0 0 14 18 M 26 14 L 29 14 A 3 3 0 0 1 26 18 M 21 22 L 21 26 M 17 26 L 25 26" 
+          fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="38" y="24" class="font-display" font-size="12" font-weight="700" fill="#ecebf5" letter-spacing="0.4">GANADOR PREMIO ARPA</text>
+  </g>
+
+  <!-- NOMBRE PRINCIPAL Y TÍTULOS (Zona central) -->
+  <g transform="translate(60, 195)">
+    <text class="font-display" font-size="44" font-weight="700" letter-spacing="-0.5">
+      <tspan fill="#ffffff">Luis Enrique </tspan>
+      <tspan fill="url(#hotGrad)">Méndez Mora</tspan>
+    </text>
+
+    <!-- Subtítulo de roles con acentos cian -->
+    <text y="38" class="font-mono" font-size="13" font-weight="500" fill="#22d3ee" letter-spacing="1.2">
+      PRODUCTOR MUSICAL  ·  INGENIERO DE AUDIO  ·  CONSULTOR ACÚSTICO
+    </text>
+
+    <!-- Línea neón separadora -->
+    <line x1="0" y1="58" x2="730" y2="58" stroke="url(#borderGrad)" stroke-width="1.2" opacity="0.6"/>
+  </g>
+
+  <!-- DATOS DE CONTACTO (Parte inferior en 2 columnas equilibradas) -->
+  <g transform="translate(60, 310)">
+    <!-- Columna 1: Teléfono y Email -->
+    <g transform="translate(0, 0)">
+      <!-- Teléfono / WhatsApp -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="rgba(34, 211, 238, 0.1)" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1"/>
+        <path d="M 14 11 L 18 11 L 19 14 L 17 16 C 18 18 20 20 22 21 L 24 19 L 27 20 L 27 24 C 18 25 13 20 13 11 Z" 
+              fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1, -1)"/>
+        <text x="48" y="15" class="font-mono" font-size="9" fill="#a7a3bf" letter-spacing="1">TEL / WHATSAPP</text>
+        <text x="48" y="30" class="font-body" font-size="14.5" font-weight="600" fill="#ffffff">+34 614 68 72 37</text>
+      </g>
+
+      <!-- Email -->
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="rgba(155, 92, 255, 0.12)" stroke="rgba(155, 92, 255, 0.3)" stroke-width="1"/>
+        <rect x="10" y="12" width="16" height="12" rx="2" fill="none" stroke="#9b5cff" stroke-width="1.6"/>
+        <path d="M 10 13 L 18 19 L 26 13" fill="none" stroke="#9b5cff" stroke-width="1.6" stroke-linecap="round"/>
+        <text x="48" y="15" class="font-mono" font-size="9" fill="#a7a3bf" letter-spacing="1">EMAIL PROFESIONAL</text>
+        <text x="48" y="30" class="font-body" font-size="14.5" font-weight="600" fill="#ffffff">luisemendezm@gmail.com</text>
+      </g>
+    </g>
+
+    <!-- Columna 2: Web y Ubicación -->
+    <g transform="translate(390, 0)">
+      <!-- Sitio Web -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="rgba(34, 211, 238, 0.1)" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1"/>
+        <circle cx="18" cy="18" r="8" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+        <path d="M 10 18 Q 18 10 26 18 M 10 18 Q 18 26 26 18 M 18 10 L 18 26" fill="none" stroke="#22d3ee" stroke-width="1.2"/>
+        <text x="48" y="15" class="font-mono" font-size="9" fill="#a7a3bf" letter-spacing="1">SITIO WEB / PORTAFOLIO</text>
+        <text x="48" y="30" class="font-body" font-size="14.5" font-weight="700" fill="#22d3ee">luismmusic.github.io</text>
+      </g>
+
+      <!-- Ubicación y LinkedIn -->
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="rgba(155, 92, 255, 0.12)" stroke="rgba(155, 92, 255, 0.3)" stroke-width="1"/>
+        <path d="M 18 11 A 4 4 0 0 0 14 15 C 14 19 18 25 18 25 C 18 25 22 19 22 15 A 4 4 0 0 0 18 11 Z M 18 16 A 1 1 0 1 1 18 14 A 1 1 0 0 1 18 16 Z" 
+              fill="none" stroke="#9b5cff" stroke-width="1.6"/>
+        <text x="48" y="15" class="font-mono" font-size="9" fill="#a7a3bf" letter-spacing="1">UBICACIÓN / DISPONIBILIDAD</text>
+        <text x="48" y="30" class="font-body" font-size="14.5" font-weight="600" fill="#ffffff">Valencia, España · Remoto</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VU METER ANIMADO SIMULADO (Abajo a la derecha, sutil) -->
+  <g transform="translate(710, 470)" opacity="0.7">
+    <rect x="0" y="8" width="5" height="24" rx="2" fill="#22d3ee"/>
+    <rect x="9" y="4" width="5" height="28" rx="2" fill="#22d3ee"/>
+    <rect x="18" y="12" width="5" height="20" rx="2" fill="#9b5cff"/>
+    <rect x="27" y="2" width="5" height="30" rx="2" fill="#9b5cff"/>
+    <rect x="36" y="7" width="5" height="25" rx="2" fill="#9b5cff"/>
+    <rect x="45" y="14" width="5" height="18" rx="2" fill="#ff3ea5"/>
+    <rect x="54" y="19" width="5" height="13" rx="2" fill="#ff3ea5"/>
+  </g>
+</svg>

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550" width="85mm" height="55mm">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9b5cff"/>
+      <stop offset="60%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="hotGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3ea5"/>
+      <stop offset="50%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#07060d"/>
+      <stop offset="100%" stop-color="#0c0919"/>
+    </linearGradient>
+
+    <radialGradient id="glowViolet" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#9b5cff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowCyan" cx="20%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(34, 211, 238, 0.06)" stroke-width="0.8"/>
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', 'Montserrat', 'Helvetica Neue', Arial, sans-serif; }
+    .font-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+  </style>
+
+  <!-- Fondo de la tarjeta -->
+  <rect width="850" height="550" fill="url(#cardBg)"/>
+  <rect width="850" height="550" fill="url(#gridPattern)"/>
+
+  <!-- Orbes de luz de fondo -->
+  <circle cx="650" cy="200" r="280" fill="url(#glowViolet)"/>
+  <circle cx="150" cy="380" r="260" fill="url(#glowCyan)"/>
+
+  <!-- Marco perimetral decorativo tech -->
+  <rect x="25" y="25" width="800" height="500" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- COLUMNA IZQUIERDA: Marca, Servicios y Lema -->
+  <g transform="translate(60, 70)">
+    <!-- Isotipo LM grande + Marca -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="70" height="70" rx="18" fill="url(#neonGrad)"/>
+      <text x="35" y="47" class="font-display" font-size="30" font-weight="800" fill="#07060d" text-anchor="middle" letter-spacing="0.5">LM</text>
+
+      <text x="90" y="38" class="font-display" font-size="28" font-weight="600" fill="#ffffff" letter-spacing="0.5">
+        luis<tspan font-weight="800" fill="#22d3ee">m</tspan>music
+      </text>
+      <text x="90" y="60" class="font-mono" font-size="12" font-weight="500" fill="#a7a3bf" letter-spacing="2">ESTUDIO · ACÚSTICA · DSP</text>
+    </g>
+
+    <!-- Lema de cabecera -->
+    <g transform="translate(0, 115)">
+      <text class="font-display" font-size="20" font-weight="600" fill="#ffffff">
+        Arte, ciencia y código
+      </text>
+      <text y="26" class="font-display" font-size="20" font-weight="600" fill="url(#hotGrad)">
+        al servicio del sonido
+      </text>
+      <line x1="0" y1="46" x2="400" y2="46" stroke="url(#borderGrad)" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- Lista de Especialidades / Servicios clave -->
+    <g transform="translate(0, 195)">
+      <!-- Item 1: Producción Musical -->
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="4" fill="#22d3ee"/>
+        <text x="24" y="12" class="font-body" font-size="14.5" font-weight="500" fill="#ecebf5">Producción Discográfica Integral</text>
+      </g>
+
+      <!-- Item 2: Mezcla & Mastering -->
+      <g transform="translate(0, 32)">
+        <circle cx="8" cy="8" r="4" fill="#9b5cff"/>
+        <text x="24" y="12" class="font-body" font-size="14.5" font-weight="500" fill="#ecebf5">Ingeniería de Grabación, Mezcla y Mastering</text>
+      </g>
+
+      <!-- Item 3: Acondicionamiento Acústico -->
+      <g transform="translate(0, 64)">
+        <circle cx="8" cy="8" r="4" fill="#22d3ee"/>
+        <text x="24" y="12" class="font-body" font-size="14.5" font-weight="500" fill="#ecebf5">Diseño y Acondicionamiento Acústico de Estudios</text>
+      </g>
+
+      <!-- Item 4: Desarrollo DSP/VST -->
+      <g transform="translate(0, 96)">
+        <circle cx="8" cy="8" r="4" fill="#ff3ea5"/>
+        <text x="24" y="12" class="font-body" font-size="14.5" font-weight="500" fill="#ecebf5">Desarrollo de Plugins VST y Emulación Analógica</text>
+      </g>
+
+      <!-- Item 5: Trayectoria y premio -->
+      <g transform="translate(0, 134)">
+        <rect x="0" y="0" width="380" height="32" rx="8" fill="rgba(155, 92, 255, 0.12)" stroke="rgba(155, 92, 255, 0.35)" stroke-width="1"/>
+        <text x="14" y="21" class="font-mono" font-size="11.5" font-weight="600" fill="#22d3ee" letter-spacing="0.5">
+          ★ +25 AÑOS DE TRAYECTORIA · PREMIO ARPA
+        </text>
+      </g>
+    </g>
+
+    <!-- Footer sutil en columna izquierda -->
+    <g transform="translate(0, 395)">
+      <text class="font-mono" font-size="11" fill="#6f6a8a" letter-spacing="1">VALENCIA, ESPAÑA · SERVICIOS REMOTOS EN TODO EL MUNDO</text>
+    </g>
+  </g>
+
+  <!-- COLUMNA DERECHA: Marco con Código QR de Alta Legibilidad -->
+  <g transform="translate(540, 75)">
+    <!-- Marco contenedor de la tarjeta QR con resplandor neón -->
+    <rect x="-14" y="-14" width="248" height="330" rx="20" fill="url(#neonGrad)" opacity="0.25" filter="url(#glow)"/>
+    <rect x="-10" y="-10" width="240" height="322" rx="16" fill="#090714" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+    <!-- Cabecera del QR -->
+    <text x="110" y="22" class="font-mono" font-size="10.5" font-weight="700" fill="#22d3ee" text-anchor="middle" letter-spacing="1.5">
+      ESCANEA CON TU MÓVIL
+    </text>
+
+    <!-- CONTENEDOR BLANCO DEL QR (Crucial para que cualquier cámara lo lea al 100% al instante) -->
+    <g transform="translate(10, 40)">
+      <rect x="0" y="0" width="200" height="200" rx="12" fill="#ffffff" stroke="rgba(34, 211, 238, 0.5)" stroke-width="1"/>
+      
+      <!-- Vector QR code real apuntando a https://luismmusic.github.io -->
+      <svg x="10" y="10" width="180" height="180" viewBox="0 0 37 37" shape-rendering="crispEdges">
+        <path fill="#ffffff" d="M0 0h37v37H0z"/>
+        <path stroke="#07060d" stroke-width="1.01" d="M4 4.5h7m4 0h3m2 0h4m2 0h7M4 5.5h1m5 0h1m1 0h2m1 0h2m1 0h4m1 0h1m2 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m3 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m6 0h3m2 0h3m1 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m4 0h1m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m2 0h1m1 0h1m1 0h1m3 0h4m1 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M14 11.5h2m1 0h2m1 0h4M4 12.5h1m1 0h1m1 0h1m1 0h1m5 0h1m1 0h2m1 0h1m1 0h2m3 0h1m2 0h1M7 13.5h2m2 0h1m2 0h3m1 0h2m1 0h1m2 0h3m2 0h1m2 0h1M4 14.5h1m1 0h2m2 0h1m1 0h2m2 0h2m3 0h2m2 0h1m1 0h1m2 0h3M7 15.5h3m2 0h2m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m3 0h1M4 16.5h2m2 0h3m1 0h5m3 0h3m1 0h4m1 0h1m1 0h2M4 17.5h2m6 0h1m4 0h1m1 0h2m3 0h3m2 0h1m2 0h1M5 18.5h1m4 0h2m2 0h1m3 0h4m2 0h2m1 0h3m1 0h2M4 19.5h3m1 0h2m1 0h1m2 0h5m1 0h2m2 0h1m2 0h3m1 0h1M6 20.5h2m2 0h2m3 0h2m1 0h2m1 0h1m1 0h4m2 0h1m1 0h2M5 21.5h3m1 0h1m3 0h1m1 0h1m2 0h2m6 0h1m2 0h2m1 0h1M4 22.5h1m2 0h2m1 0h1m1 0h2m1 0h3m4 0h1m2 0h4m2 0h2M5 23.5h1m6 0h4m3 0h1m1 0h2m6 0h1m1 0h1M4 24.5h1m3 0h6m1 0h1m4 0h2m2 0h5M12 25.5h6m1 0h2m2 0h2m3 0h1m1 0h3M4 26.5h7m7 0h4m1 0h2m1 0h1m1 0h2m1 0h2M4 27.5h1m5 0h1m2 0h1m3 0h2m1 0h3m1 0h1m3 0h2m1 0h1M4 28.5h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m2 0h1m1 0h5m2 0h1M4 29.5h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h2m8 0h1m1 0h1M4 30.5h1m1 0h3m1 0h1m1 0h2m2 0h1m4 0h1m3 0h1m1 0h3m2 0h1M4 31.5h1m5 0h1m5 0h2m1 0h1m3 0h3m1 0h1m3 0h1M4 32.5h7m1 0h3m3 0h1m1 0h1m2 0h3m1 0h1m3 0h2"/>
+      </svg>
+    </g>
+
+    <!-- Texto bajo el QR -->
+    <text x="110" y="265" class="font-body" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
+      ESCUCHA MIS TRABAJOS
+    </text>
+    <text x="110" y="284" class="font-mono" font-size="11.5" font-weight="600" fill="#22d3ee" text-anchor="middle">
+      luismmusic.github.io
+    </text>
+  </g>
+</svg>

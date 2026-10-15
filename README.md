@@ -8,12 +8,11 @@ Sitio estático (HTML + CSS + JS, sin dependencias) publicado en **GitHub Pages*
 
 ```
 index.html          Estructura de la página
-tarjeta.html        Tarjeta de presentación imprimible (85 × 55 mm)
 css/style.css       Diseño (tema oscuro neón violeta/cian)
 js/content.js       ← CONTENIDO: servicios, experiencia, créditos, formación, reproductores
 js/i18n.js          Textos de la interfaz en ES / EN
 js/main.js          Lógica (idioma, animaciones, visualizador, formulario)
-assets/             Imágenes, favicon y código QR vectorizado
+assets/             Imágenes y favicon
 ```
 
 ## Editar contenido
