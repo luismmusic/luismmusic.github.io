@@ -103,8 +103,16 @@
       const u = new URL(url);
       const host = u.hostname.replace(/^www\./, "");
       if (host === "youtube.com" || host === "m.youtube.com" || host === "youtu.be") {
-        const id = host === "youtu.be" ? u.pathname.slice(1) : u.searchParams.get("v") || u.pathname.split("/").pop();
-        return { src: `https://www.youtube-nocookie.com/embed/${id}`, video: true };
+        const list = u.searchParams.get("list");
+        const v = host === "youtu.be" ? u.pathname.slice(1) : u.searchParams.get("v");
+        if (list && !v) {
+          return { src: `https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(list)}`, video: true };
+        }
+        if (list && v) {
+          return { src: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v)}?list=${encodeURIComponent(list)}`, video: true };
+        }
+        const id = v || u.pathname.split("/").pop();
+        return { src: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`, video: true };
       }
       if (host === "open.spotify.com") {
         const parts = u.pathname.split("/").filter((p) => p && !p.startsWith("intl-") && p !== "embed");
