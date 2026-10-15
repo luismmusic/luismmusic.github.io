@@ -1,22 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550" width="85mm" height="55mm">
   <defs>
-    <!-- Gradientes -->
-    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#9b5cff"/>
-      <stop offset="60%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#22d3ee"/>
-    </linearGradient>
-
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.6"/>
-      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.6"/>
-    </linearGradient>
-
-    <radialGradient id="glowViolet" cx="80%" cy="40%" r="55%">
-      <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.22"/>
-      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#080711" stop-opacity="0"/>
+    <!-- Resplandor sutil -->
+    <radialGradient id="cornerGlow" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#07060d" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
@@ -26,92 +13,41 @@
   </style>
 
   <!-- Fondo negro mate -->
-  <rect width="850" height="550" fill="#080711"/>
+  <rect width="850" height="550" fill="#07060d"/>
+  <rect width="850" height="550" fill="url(#cornerGlow)"/>
 
-  <!-- Resplandor ambiental suave -->
-  <rect width="850" height="550" fill="url(#glowViolet)"/>
+  <!-- COLUMNA IZQUIERDA: Contacto esencial y limpio -->
+  <g transform="translate(85, 175)">
+    <!-- Teléfono -->
+    <text y="0" class="font-mono" font-size="17" font-weight="500" fill="#ffffff" letter-spacing="0.5">
+      +34 614 68 72 37
+    </text>
 
-  <!-- Marco perimetral fino -->
-  <rect x="28" y="28" width="794" height="494" rx="12" fill="none" stroke="url(#borderGrad)" stroke-width="1.2"/>
+    <!-- Email -->
+    <text y="55" class="font-mono" font-size="17" font-weight="500" fill="#ffffff" letter-spacing="0.2">
+      luisemendezm@gmail.com
+    </text>
 
-  <!-- COLUMNA IZQUIERDA: Marca y Datos de Contacto Directos -->
-  <g transform="translate(68, 70)">
-    <!-- Cabecera de marca sobria -->
-    <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="40" height="40" rx="10" fill="url(#neonGrad)"/>
-      <text x="20" y="27" class="font-sans" font-size="17" font-weight="800" fill="#07060d" text-anchor="middle">LM</text>
+    <!-- Web -->
+    <text y="110" class="font-mono" font-size="17" font-weight="600" fill="#22d3ee" letter-spacing="0.5">
+      luismmusic.github.io
+    </text>
 
-      <text x="54" y="22" class="font-sans" font-size="20" font-weight="600" fill="#ffffff" letter-spacing="0.5">
-        luis<tspan font-weight="800" fill="#22d3ee">m</tspan>music
-      </text>
-      <text x="54" y="38" class="font-mono" font-size="10.5" font-weight="500" fill="#a7a3bf" letter-spacing="1.5">AUDIO · MUSIC · DSP</text>
-    </g>
-
-    <!-- Línea sutil -->
-    <line x1="0" y1="62" x2="400" y2="62" stroke="url(#borderGrad)" stroke-width="1" opacity="0.4"/>
-
-    <!-- BLOQUE DE CONTACTO LIMPIO (Iconos vectoriales + Datos) -->
-    <g transform="translate(0, 95)">
-      <!-- 1. Teléfono / WhatsApp -->
-      <g transform="translate(0, 0)">
-        <circle cx="16" cy="16" r="16" fill="rgba(34, 211, 238, 0.08)" stroke="rgba(34, 211, 238, 0.25)" stroke-width="1"/>
-        <!-- Icono teléfono -->
-        <path d="M 12 9.5 L 15.5 9.5 L 16.5 12.5 L 14.5 14.5 C 15.5 16.5 17.5 18.5 19.5 19.5 L 21.5 17.5 L 24.5 18.5 L 24.5 22 C 15.5 23 11 18.5 11 9.5 Z" 
-              fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(-2, -2)"/>
-        <text x="46" y="21" class="font-mono" font-size="15" font-weight="500" fill="#ffffff" letter-spacing="0.5">+34 614 68 72 37</text>
-      </g>
-
-      <!-- 2. Email -->
-      <g transform="translate(0, 56)">
-        <circle cx="16" cy="16" r="16" fill="rgba(155, 92, 255, 0.1)" stroke="rgba(155, 92, 255, 0.3)" stroke-width="1"/>
-        <!-- Icono sobre -->
-        <rect x="8" y="10" width="16" height="12" rx="2" fill="none" stroke="#9b5cff" stroke-width="1.5"/>
-        <path d="M 8 11 L 16 17 L 24 11" fill="none" stroke="#9b5cff" stroke-width="1.5" stroke-linecap="round"/>
-        <text x="46" y="21" class="font-mono" font-size="15" font-weight="500" fill="#ffffff">luisemendezm@gmail.com</text>
-      </g>
-
-      <!-- 3. Web -->
-      <g transform="translate(0, 112)">
-        <circle cx="16" cy="16" r="16" fill="rgba(34, 211, 238, 0.08)" stroke="rgba(34, 211, 238, 0.25)" stroke-width="1"/>
-        <!-- Icono globo web -->
-        <circle cx="16" cy="16" r="8" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
-        <path d="M 8 16 Q 16 8 24 16 M 8 16 Q 16 24 24 16 M 16 8 L 16 24" fill="none" stroke="#22d3ee" stroke-width="1"/>
-        <text x="46" y="21" class="font-mono" font-size="15" font-weight="600" fill="#22d3ee">luismmusic.github.io</text>
-      </g>
-
-      <!-- 4. LinkedIn -->
-      <g transform="translate(0, 168)">
-        <circle cx="16" cy="16" r="16" fill="rgba(155, 92, 255, 0.1)" stroke="rgba(155, 92, 255, 0.3)" stroke-width="1"/>
-        <!-- Icono LinkedIn in -->
-        <text x="16" y="21" class="font-sans" font-size="12" font-weight="700" fill="#9b5cff" text-anchor="middle">in</text>
-        <text x="46" y="21" class="font-mono" font-size="14.5" font-weight="500" fill="#ecebf5">linkedin.com/in/luismmusic</text>
-      </g>
-
-      <!-- 5. Ubicación -->
-      <g transform="translate(0, 224)">
-        <circle cx="16" cy="16" r="16" fill="rgba(34, 211, 238, 0.08)" stroke="rgba(34, 211, 238, 0.25)" stroke-width="1"/>
-        <!-- Icono ubicación -->
-        <path d="M 16 9 A 4 4 0 0 0 12 13 C 12 17 16 23 16 23 C 16 23 20 17 20 13 A 4 4 0 0 0 16 9 Z M 16 14 A 1 1 0 1 1 16 12 A 1 1 0 0 1 16 14 Z" 
-              fill="none" stroke="#22d3ee" stroke-width="1.5"/>
-        <text x="46" y="21" class="font-mono" font-size="14.5" font-weight="500" fill="#a7a3bf">Valencia, España</text>
-      </g>
-    </g>
+    <!-- Ciudad -->
+    <text y="165" class="font-mono" font-size="16" font-weight="400" fill="#a7a3bf" letter-spacing="0.5">
+      Valencia, España
+    </text>
   </g>
 
-  <!-- COLUMNA DERECHA: Código QR de Alta Legibilidad -->
-  <g transform="translate(545, 115)">
-    <!-- Contenedor blanco nítido con esquinas suaves (lectura al 100% garantizada en cualquier cámara de móvil) -->
-    <rect x="0" y="0" width="220" height="220" rx="16" fill="#ffffff" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <!-- COLUMNA DERECHA: Código QR minimalista (escaneo instantáneo al portafolio) -->
+  <g transform="translate(565, 165)">
+    <!-- Contenedor blanco con bordes redondeados limpios -->
+    <rect x="0" y="0" width="200" height="200" rx="16" fill="#ffffff"/>
 
-    <!-- Código QR vectorial exacto que apunta a https://luismmusic.github.io -->
-    <svg x="12" y="12" width="196" height="196" viewBox="0 0 37 37" shape-rendering="crispEdges">
+    <!-- Código QR vectorial que apunta a https://luismmusic.github.io -->
+    <svg x="12" y="12" width="176" height="176" viewBox="0 0 37 37" shape-rendering="crispEdges">
       <path fill="#ffffff" d="M0 0h37v37H0z"/>
-      <path stroke="#080711" stroke-width="1.01" d="M4 4.5h7m4 0h3m2 0h4m2 0h7M4 5.5h1m5 0h1m1 0h2m1 0h2m1 0h4m1 0h1m2 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m3 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m6 0h3m2 0h3m1 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m4 0h1m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m2 0h1m1 0h1m1 0h1m3 0h4m1 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M14 11.5h2m1 0h2m1 0h4M4 12.5h1m1 0h1m1 0h1m1 0h1m5 0h1m1 0h2m1 0h1m1 0h2m3 0h1m2 0h1M7 13.5h2m2 0h1m2 0h3m1 0h2m1 0h1m2 0h3m2 0h1m2 0h1M4 14.5h1m1 0h2m2 0h1m1 0h2m2 0h2m3 0h2m2 0h1m1 0h1m2 0h3M7 15.5h3m2 0h2m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m3 0h1M4 16.5h2m2 0h3m1 0h5m3 0h3m1 0h4m1 0h1m1 0h2M4 17.5h2m6 0h1m4 0h1m1 0h2m3 0h3m2 0h1m2 0h1M5 18.5h1m4 0h2m2 0h1m3 0h4m2 0h2m1 0h3m1 0h2M4 19.5h3m1 0h2m1 0h1m2 0h5m1 0h2m2 0h1m2 0h3m1 0h1M6 20.5h2m2 0h2m3 0h2m1 0h2m1 0h1m1 0h4m2 0h1m1 0h2M5 21.5h3m1 0h1m3 0h1m1 0h1m2 0h2m6 0h1m2 0h2m1 0h1M4 22.5h1m2 0h2m1 0h1m1 0h2m1 0h3m4 0h1m2 0h4m2 0h2M5 23.5h1m6 0h4m3 0h1m1 0h2m6 0h1m1 0h1M4 24.5h1m3 0h6m1 0h1m4 0h2m2 0h5M12 25.5h6m1 0h2m2 0h2m3 0h1m1 0h3M4 26.5h7m7 0h4m1 0h2m1 0h1m1 0h2m1 0h2M4 27.5h1m5 0h1m2 0h1m3 0h2m1 0h3m1 0h1m3 0h2m1 0h1M4 28.5h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m2 0h1m1 0h5m2 0h1M4 29.5h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h2m8 0h1m1 0h1M4 30.5h1m1 0h3m1 0h1m1 0h2m2 0h1m4 0h1m3 0h1m1 0h3m2 0h1M4 31.5h1m5 0h1m5 0h2m1 0h1m3 0h3m1 0h1m3 0h1M4 32.5h7m1 0h3m3 0h1m1 0h1m2 0h3m1 0h1m3 0h2"/>
+      <path stroke="#07060d" stroke-width="1.01" d="M4 4.5h7m4 0h3m2 0h4m2 0h7M4 5.5h1m5 0h1m1 0h2m1 0h2m1 0h4m1 0h1m2 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m3 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m6 0h3m2 0h3m1 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m4 0h1m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m2 0h1m1 0h1m1 0h1m3 0h4m1 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M14 11.5h2m1 0h2m1 0h4M4 12.5h1m1 0h1m1 0h1m1 0h1m5 0h1m1 0h2m1 0h1m1 0h2m3 0h1m2 0h1M7 13.5h2m2 0h1m2 0h3m1 0h2m1 0h1m2 0h3m2 0h1m2 0h1M4 14.5h1m1 0h2m2 0h1m1 0h2m2 0h2m3 0h2m2 0h1m1 0h1m2 0h3M7 15.5h3m2 0h2m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m3 0h1M4 16.5h2m2 0h3m1 0h5m3 0h3m1 0h4m1 0h1m1 0h2M4 17.5h2m6 0h1m4 0h1m1 0h2m3 0h3m2 0h1m2 0h1M5 18.5h1m4 0h2m2 0h1m3 0h4m2 0h2m1 0h3m1 0h2M4 19.5h3m1 0h2m1 0h1m2 0h5m1 0h2m2 0h1m2 0h3m1 0h1M6 20.5h2m2 0h2m3 0h2m1 0h2m1 0h1m1 0h4m2 0h1m1 0h2M5 21.5h3m1 0h1m3 0h1m1 0h1m2 0h2m6 0h1m2 0h2m1 0h1M4 22.5h1m2 0h2m1 0h1m1 0h2m1 0h3m4 0h1m2 0h4m2 0h2M5 23.5h1m6 0h4m3 0h1m1 0h2m6 0h1m1 0h1M4 24.5h1m3 0h6m1 0h1m4 0h2m2 0h5M12 25.5h6m1 0h2m2 0h2m3 0h1m1 0h3M4 26.5h7m7 0h4m1 0h2m1 0h1m1 0h2m1 0h2M4 27.5h1m5 0h1m2 0h1m3 0h2m1 0h3m1 0h1m3 0h2m1 0h1M4 28.5h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m2 0h1m1 0h5m2 0h1M4 29.5h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h2m8 0h1m1 0h1M4 30.5h1m1 0h3m1 0h1m1 0h2m2 0h1m4 0h1m3 0h1m1 0h3m2 0h1M4 31.5h1m5 0h1m5 0h2m1 0h1m3 0h3m1 0h1m3 0h1M4 32.5h7m1 0h3m3 0h1m1 0h1m2 0h3m1 0h1m3 0h2"/>
     </svg>
-
-    <!-- Leyenda bajo el QR -->
-    <text x="110" y="260" class="font-mono" font-size="12" font-weight="600" fill="#22d3ee" text-anchor="middle" letter-spacing="1">
-      PORTAFOLIO WEB
-    </text>
   </g>
 </svg>
