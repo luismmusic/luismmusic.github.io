@@ -1,0 +1,5 @@
+# No publicar el CV original (Word) en el repositorio público
+*.docx
+~$*
+Thumbs.db
+.DS_Store

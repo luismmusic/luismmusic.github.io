@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luis Enrique Méndez Mora — Productor Musical, Ingeniero de Audio y Consultor Acústico</title>
+  <meta name="description" content="Productor musical, ingeniero de audio, consultor acústico y programador DSP con más de 25 años de trayectoria. Ganador del Premio Arpa. Producción, mezcla, mastering y diseño de estudios desde Valencia, España." />
+  <meta name="author" content="Luis Enrique Méndez Mora" />
+  <meta name="theme-color" content="#07060d" />
+
+  <link rel="canonical" href="https://luismmusic.github.io/" />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://luismmusic.github.io/" />
+  <meta property="og:title" content="Luis Enrique Méndez Mora — Productor Musical & Ingeniero de Audio" />
+  <meta property="og:description" content="Más de 25 años en producción, mezcla, mastering y diseño acústico de estudios. Ganador del Premio Arpa." />
+  <meta property="og:image" content="https://luismmusic.github.io/assets/img/hero-studio.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Datos estructurados para buscadores -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luis Enrique Méndez Mora",
+    "jobTitle": ["Productor Musical", "Ingeniero de Audio", "Consultor Acústico", "Programador"],
+    "email": "mailto:luisemendezm@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Valencia", "addressCountry": "ES" },
+    "alumniOf": "Universidad Católica Cecilio Acosta",
+    "award": "Premio Arpa — “Otra Historia” (EXP)",
+    "sameAs": ["https://www.linkedin.com/in/luismmusic"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Fondo global -->
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" id="nav-logo" aria-label="Luis Méndez — inicio">
+        <span class="logo-mark">LM</span>
+        <span class="logo-text">luis<b>m</b>music</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Principal">
+        <a href="#about" data-i18n="nav.about" id="nav-about">Perfil</a>
+        <a href="#services" data-i18n="nav.services" id="nav-services">Servicios</a>
+        <a href="#experience" data-i18n="nav.experience" id="nav-experience">Trayectoria</a>
+        <a href="#portfolio" data-i18n="nav.portfolio" id="nav-portfolio">Créditos</a>
+        <a href="#listen" data-i18n="nav.listen" id="nav-listen">Escucha</a>
+        <a href="#education" data-i18n="nav.education" id="nav-education">Formación</a>
+        <a href="#contact" class="nav__cta" data-i18n="nav.contact" id="nav-contact">Contacto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang-switch__btn is-active" data-lang="es" id="lang-es">ES</button>
+          <button type="button" class="lang-switch__btn" data-lang="en" id="lang-en">EN</button>
+          <span class="lang-switch__pill" aria-hidden="true"></span>
+        </div>
+        <button type="button" class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="nav.menu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/hero-studio.jpg" alt="" class="hero__img" />
+        <canvas id="hero-visualizer" class="hero__canvas"></canvas>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow reveal"><span class="live-dot"></span><span data-i18n="hero.eyebrow">Disponible para proyectos · Valencia, España</span></p>
+
+        <h1 class="hero__title reveal">
+          <span class="hero__name">Luis Enrique</span>
+          <span class="hero__name gradient-text">Méndez Mora</span>
+        </h1>
+
+        <p class="hero__roles reveal" aria-live="polite">
+          <span class="mono">&gt;</span>
+          <span id="role-rotator" class="role-rotator">Productor Musical</span><span class="caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero__lead reveal" data-i18n="hero.lead">Más de 25 años dando forma al sonido: producción discográfica, mezcla, mastering, diseño acústico de estudios y desarrollo de herramientas de audio.</p>
+
+        <div class="hero__ctas reveal">
+          <a href="#listen" class="btn btn--primary" id="hero-cta-listen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span data-i18n="hero.cta1">Escuchar trabajos</span>
+          </a>
+          <a href="#contact" class="btn btn--ghost" id="hero-cta-contact"><span data-i18n="hero.cta2">Hablemos de tu proyecto</span></a>
+        </div>
+
+        <div class="award-chip reveal" id="hero-award">
+          <span class="award-chip__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 4h10v3a5 5 0 0 1-10 0V4zm-3 1h3v2a3 3 0 0 1-3-2zm13 0h3a3 3 0 0 1-3 2V5zM10 14h4v3h2v3H8v-3h2z"/></svg>
+          </span>
+          <span>
+            <strong data-i18n="hero.award">Ganador del Premio Arpa</strong>
+            <small data-i18n="hero.awardSub">“Otra Historia” — EXP</small>
+          </span>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" id="hero-scroll" aria-label="Scroll">
+        <span data-i18n="hero.scroll">Desliza</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__text">
+            <p class="kicker reveal" data-i18n="about.kicker">01 — Perfil</p>
+            <h2 class="section-title reveal" data-i18n="about.title">Arte, ciencia y código al servicio del sonido</h2>
+            <p class="reveal" data-i18n="about.p1"></p>
+            <p class="reveal" data-i18n-html="about.p2"></p>
+
+            <div class="stats reveal" id="stats">
+              <div class="stat">
+                <span class="stat__num"><span data-count="25">0</span>+</span>
+                <span class="stat__label" data-i18n="stats.years">Años de trayectoria</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num"><span data-count="29" id="artist-count">0</span>+</span>
+                <span class="stat__label" data-i18n="stats.artists">Artistas y agrupaciones</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num"><span data-count="1">0</span>×</span>
+                <span class="stat__label" data-i18n="stats.award">Premio Arpa</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num"><span data-count="4">0</span></span>
+                <span class="stat__label" data-i18n="stats.disciplines">Disciplinas</span>
+              </div>
+            </div>
+          </div>
+
+          <figure class="about__media reveal">
+            <div class="about__frame">
+              <img src="assets/img/about-acoustics.jpg" alt="Micrófono de condensador frente a difusores acústicos iluminados con luz violeta y cian" loading="lazy" />
+            </div>
+            <figcaption class="about__badge">
+              <span class="mono">EST.</span>
+              <strong data-i18n="about.badge">Desde 1998</strong>
+            </figcaption>
+            <div class="vu" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </figure>
+        </div>
+
+        <h3 class="sub-title reveal" data-i18n="skills.title">Competencias clave</h3>
+        <div class="skills" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="services.kicker">02 — Servicios</p>
+          <h2 class="section-title reveal" data-i18n="services.title">Lo que puedo hacer por tu música</h2>
+          <p class="section-lead reveal" data-i18n="services.lead"></p>
+        </header>
+        <div class="services" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="exp.kicker">03 — Trayectoria</p>
+          <h2 class="section-title reveal" data-i18n="exp.title">Experiencia profesional</h2>
+        </header>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ============================ PORTFOLIO ============================ -->
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="portfolio.kicker">04 — Portafolio</p>
+          <h2 class="section-title reveal" data-i18n="portfolio.title">Créditos destacados</h2>
+        </header>
+        <div class="featured" id="featured-grid"></div>
+
+        <h3 class="sub-title reveal" data-i18n="portfolio.artists">Artistas y agrupaciones con los que he trabajado</h3>
+      </div>
+      <div class="marquee reveal" id="artists-marquee" aria-label="Artistas"></div>
+    </section>
+
+    <!-- ============================ LISTEN ============================ -->
+    <section class="section" id="listen">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="listen.kicker">05 — Escucha</p>
+          <h2 class="section-title reveal" data-i18n="listen.title">Escucha mi trabajo</h2>
+          <p class="section-lead reveal" data-i18n="listen.lead"></p>
+        </header>
+        <div class="media-grid" id="media-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================ EDUCATION ============================ -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="edu.kicker">06 — Formación</p>
+          <h2 class="section-title reveal" data-i18n="edu.title">Formación académica y certificaciones</h2>
+        </header>
+        <div class="edu">
+          <div class="edu__col">
+            <h3 class="edu__heading reveal" data-i18n="edu.degrees">Títulos</h3>
+            <div id="degrees-list" class="degrees"></div>
+          </div>
+          <div class="edu__col">
+            <h3 class="edu__heading reveal" data-i18n="edu.certs">Certificaciones y perfeccionamiento</h3>
+            <ul id="certs-list" class="certs"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact glass">
+          <div class="contact__info">
+            <p class="kicker reveal" data-i18n="contact.kicker">07 — Contacto</p>
+            <h2 class="section-title reveal" data-i18n="contact.title">¿Tienes un proyecto en mente?</h2>
+            <p class="section-lead reveal" data-i18n="contact.lead"></p>
+
+            <ul class="contact__list reveal" id="contact-list"></ul>
+          </div>
+
+          <form class="form reveal" id="contact-form" novalidate>
+            <div class="form__row">
+              <label class="field">
+                <span data-i18n="form.name">Nombre</span>
+                <input type="text" name="name" id="form-name" required autocomplete="name" />
+              </label>
+              <label class="field">
+                <span data-i18n="form.email">Email</span>
+                <input type="email" name="email" id="form-email" required autocomplete="email" />
+              </label>
+            </div>
+            <label class="field">
+              <span data-i18n="form.service">Servicio</span>
+              <select name="service" id="form-service"></select>
+            </label>
+            <label class="field">
+              <span data-i18n="form.message">Mensaje</span>
+              <textarea name="message" id="form-message" rows="5" required data-i18n-ph="form.messagePh"></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary btn--block" id="form-submit">
+              <span data-i18n="form.send">Enviar mensaje</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+            </button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="nav__logo" id="footer-logo">
+        <span class="logo-mark">LM</span>
+        <span class="logo-text">luis<b>m</b>music</span>
+      </a>
+      <p class="footer__copy">© <span id="year"></span> Luis Enrique Méndez Mora. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <a href="#top" class="footer__top" id="footer-top"><span data-i18n="footer.top">Volver arriba</span> ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

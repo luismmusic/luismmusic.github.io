@@ -1,0 +1,162 @@
+/* =========================================================================
+   TEXTOS DE LA INTERFAZ (ES / EN)
+   ========================================================================= */
+window.I18N = {
+  es: {
+    "meta.title": "Luis Enrique Méndez Mora — Productor Musical, Ingeniero de Audio y Consultor Acústico",
+    "meta.description": "Productor musical, ingeniero de audio, consultor acústico y programador DSP con más de 25 años de trayectoria. Ganador del Premio Arpa. Producción, mezcla, mastering y diseño de estudios desde Valencia, España.",
+
+    "nav.about": "Perfil",
+    "nav.services": "Servicios",
+    "nav.experience": "Trayectoria",
+    "nav.portfolio": "Créditos",
+    "nav.listen": "Escucha",
+    "nav.education": "Formación",
+    "nav.contact": "Contacto",
+    "nav.menu": "Abrir menú",
+
+    "hero.eyebrow": "Disponible para proyectos · Valencia, España",
+    "hero.lead": "Más de 25 años dando forma al sonido: producción discográfica, mezcla, mastering, diseño acústico de estudios y desarrollo de herramientas de audio.",
+    "hero.cta1": "Escuchar trabajos",
+    "hero.cta2": "Hablemos de tu proyecto",
+    "hero.award": "Ganador del Premio Arpa",
+    "hero.awardSub": "“Otra Historia” — EXP",
+    "hero.scroll": "Desliza",
+
+    "about.kicker": "01 — Perfil",
+    "about.title": "Arte, ciencia y código al servicio del sonido",
+    "about.p1": "Soy licenciado en Música (Musicología) y Programador Analista Técnico, con más de 25 años de trayectoria en producción discográfica, ingeniería de grabación, mezcla, mastering y diseño acústico de estudios profesionales.",
+    "about.p2": "Gané el <strong>Premio Arpa</strong> como productor e ingeniero del álbum “Otra Historia” de EXP. Combino una sólida formación artística y docente con competencias avanzadas en física del sonido, programación, desarrollo de herramientas virtuales de audio (DSP/VST) y soporte técnico especializado para estudios.",
+    "about.badge": "Desde 1998",
+    "stats.years": "Años de trayectoria",
+    "stats.artists": "Artistas y agrupaciones",
+    "stats.award": "Premio Arpa",
+    "stats.disciplines": "Disciplinas: música, audio, acústica y código",
+    "skills.title": "Competencias clave",
+
+    "services.kicker": "02 — Servicios",
+    "services.title": "Lo que puedo hacer por tu música",
+    "services.lead": "Trabajo en remoto con artistas, productores y estudios de cualquier parte del mundo, y presencialmente desde Valencia.",
+    "services.cta": "Solicitar presupuesto",
+
+    "exp.kicker": "03 — Trayectoria",
+    "exp.title": "Experiencia profesional",
+    "exp.credits": "Créditos",
+
+    "portfolio.kicker": "04 — Portafolio",
+    "portfolio.title": "Créditos destacados",
+    "portfolio.artists": "Artistas y agrupaciones con los que he trabajado",
+
+    "listen.kicker": "05 — Escucha",
+    "listen.title": "Escucha mi trabajo",
+    "listen.lead": "Una selección de producciones, mezclas y masters.",
+    "listen.soon": "Próximamente",
+    "listen.soonText": "Muy pronto encontrarás aquí reproductores con una selección de mis trabajos.",
+
+    "edu.kicker": "06 — Formación",
+    "edu.title": "Formación académica y certificaciones",
+    "edu.degrees": "Títulos",
+    "edu.certs": "Certificaciones y perfeccionamiento",
+
+    "contact.kicker": "07 — Contacto",
+    "contact.title": "¿Tienes un proyecto en mente?",
+    "contact.lead": "Cuéntame sobre tu música, tu estudio o tu idea. Te responderé lo antes posible.",
+    "contact.email": "Email",
+    "contact.phone": "Teléfono",
+    "contact.whatsapp": "WhatsApp",
+    "contact.linkedin": "LinkedIn",
+    "contact.location": "Ubicación",
+    "form.name": "Nombre",
+    "form.email": "Email",
+    "form.service": "Servicio",
+    "form.serviceGeneral": "Consulta general",
+    "form.message": "Mensaje",
+    "form.messagePh": "Cuéntame sobre tu proyecto…",
+    "form.send": "Enviar mensaje",
+    "form.sending": "Enviando…",
+    "form.success": "¡Gracias! Tu mensaje está listo. Te responderé pronto.",
+    "form.error": "No se pudo enviar. Escríbeme directamente a",
+
+    "footer.rights": "Todos los derechos reservados.",
+    "footer.top": "Volver arriba"
+  },
+
+  en: {
+    "meta.title": "Luis Enrique Méndez Mora — Music Producer, Audio Engineer & Acoustic Consultant",
+    "meta.description": "Music producer, audio engineer, acoustic consultant and DSP programmer with 25+ years of experience. Arpa Award winner. Production, mixing, mastering and studio design from Valencia, Spain.",
+
+    "nav.about": "About",
+    "nav.services": "Services",
+    "nav.experience": "Experience",
+    "nav.portfolio": "Credits",
+    "nav.listen": "Listen",
+    "nav.education": "Education",
+    "nav.contact": "Contact",
+    "nav.menu": "Open menu",
+
+    "hero.eyebrow": "Available for projects · Valencia, Spain",
+    "hero.lead": "25+ years shaping sound: record production, mixing, mastering, acoustic studio design and audio tool development.",
+    "hero.cta1": "Listen to my work",
+    "hero.cta2": "Let’s talk about your project",
+    "hero.award": "Arpa Award winner",
+    "hero.awardSub": "“Otra Historia” — EXP",
+    "hero.scroll": "Scroll",
+
+    "about.kicker": "01 — About",
+    "about.title": "Art, science and code in service of sound",
+    "about.p1": "I hold a Bachelor’s degree in Music (Musicology) and I’m a Technical Programmer Analyst, with over 25 years of experience in record production, recording engineering, mixing, mastering and acoustic design of professional studios.",
+    "about.p2": "I won the <strong>Arpa Award</strong> as producer and engineer of EXP’s album “Otra Historia”. I combine a solid artistic and teaching background with advanced skills in physics of sound, programming, virtual audio tool development (DSP/VST) and specialized technical support for studios.",
+    "about.badge": "Since 1998",
+    "stats.years": "Years of experience",
+    "stats.artists": "Artists & ensembles",
+    "stats.award": "Arpa Award",
+    "stats.disciplines": "Disciplines: music, audio, acoustics & code",
+    "skills.title": "Core skills",
+
+    "services.kicker": "02 — Services",
+    "services.title": "What I can do for your music",
+    "services.lead": "I work remotely with artists, producers and studios anywhere in the world, and in person from Valencia.",
+    "services.cta": "Request a quote",
+
+    "exp.kicker": "03 — Experience",
+    "exp.title": "Professional experience",
+    "exp.credits": "Credits",
+
+    "portfolio.kicker": "04 — Portfolio",
+    "portfolio.title": "Featured credits",
+    "portfolio.artists": "Artists & ensembles I’ve worked with",
+
+    "listen.kicker": "05 — Listen",
+    "listen.title": "Listen to my work",
+    "listen.lead": "A selection of productions, mixes and masters.",
+    "listen.soon": "Coming soon",
+    "listen.soonText": "Players with a selection of my work will be available here very soon.",
+
+    "edu.kicker": "06 — Education",
+    "edu.title": "Education & certifications",
+    "edu.degrees": "Degrees",
+    "edu.certs": "Certifications & further training",
+
+    "contact.kicker": "07 — Contact",
+    "contact.title": "Have a project in mind?",
+    "contact.lead": "Tell me about your music, your studio or your idea. I’ll get back to you as soon as possible.",
+    "contact.email": "Email",
+    "contact.phone": "Phone",
+    "contact.whatsapp": "WhatsApp",
+    "contact.linkedin": "LinkedIn",
+    "contact.location": "Location",
+    "form.name": "Name",
+    "form.email": "Email",
+    "form.service": "Service",
+    "form.serviceGeneral": "General enquiry",
+    "form.message": "Message",
+    "form.messagePh": "Tell me about your project…",
+    "form.send": "Send message",
+    "form.sending": "Sending…",
+    "form.success": "Thank you! Your message is ready. I’ll reply soon.",
+    "form.error": "Couldn’t send. Write to me directly at",
+
+    "footer.rights": "All rights reserved.",
+    "footer.top": "Back to top"
+  }
+};
