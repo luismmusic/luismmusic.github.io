@@ -285,7 +285,12 @@ window.SITE = {
        { url: "https://soundcloud.com/usuario/tema", title: { es: "Mezcla", en: "Mix" } },
      Mientras la lista esté vacía, se mostrará un aviso de "Próximamente".
      --------------------------------------------------------------------- */
-  media: [],
+  media: [
+    {
+      url: "https://open.spotify.com/intl-es/album/6lb7tRV1tAuxR34JqO4L0R",
+      title: { es: "EXP — Otra Historia (Álbum completo)", en: "EXP — Otra Historia (Full Album)" }
+    }
+  ],
 
   /* ---------------------------------------------------------------------
      Formación académica y certificaciones
