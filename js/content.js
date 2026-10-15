@@ -300,9 +300,9 @@ window.SITE = {
     },
     {
       year: "2010",
-      url: "https://open.spotify.com/intl-es/album/6lb7tRV1tAuxR34JqO4L0R",
+      url: "https://www.youtube.com/watch?v=G-RQXrAlF40&list=OLAK5uy_kSEVwT19YQAeMmFrUDgVizW9hl4AJ0ADc",
       title: { es: "EXP — “Otra Historia”", en: "EXP — “Otra Historia”" },
-      role: { es: "Álbum completo", en: "Full Album" }
+      role: { es: "Premio Arpa · Álbum", en: "Arpa Award · Album" }
     }
   ],
 
