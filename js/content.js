@@ -285,7 +285,7 @@ window.SITE = {
        { url: "https://soundcloud.com/usuario/tema", title: { es: "Mezcla", en: "Mix" } },
      Mientras la lista esté vacía, se mostrará un aviso de "Próximamente".
      --------------------------------------------------------------------- */
-  media: [],
+  media: [https://open.spotify.com/intl-es/album/6lb7tRV1tAuxR34JqO4L0R?si=h9oLZM3MTkS1uS15SRZMyQ],
 
   /* ---------------------------------------------------------------------
      Formación académica y certificaciones
