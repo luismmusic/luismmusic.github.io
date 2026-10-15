@@ -287,6 +287,12 @@ window.SITE = {
      --------------------------------------------------------------------- */
   media: [
     {
+      year: "2016",
+      url: "https://www.youtube.com/playlist?list=OLAK5uy_l4EAtHIqXluPFulxeACDgT7HtMogsWH5w",
+      title: { es: "Janet Swanson — “Near to the Broken”", en: "Janet Swanson — “Near to the Broken”" },
+      role: { es: "Mezcla & Mastering", en: "Mixing & Mastering" }
+    },
+    {
       year: "2014",
       url: "https://soundcloud.com/robertvivomusic/puro-amor",
       title: { es: "Robert Vivo — “Puro Amor”", en: "Robert Vivo — “Puro Amor”" },
