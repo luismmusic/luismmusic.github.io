@@ -3,3 +3,9 @@
 ~$*
 Thumbs.db
 .DS_Store
+
+# Tarjeta de presentación e insumos (uso exclusivo local)
+tarjeta*
+*tarjeta*
+assets/qr-*
+assets/img/*tarjeta*
