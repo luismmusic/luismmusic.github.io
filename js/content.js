@@ -136,7 +136,7 @@ window.SITE = {
           "Remote DAW system configuration and development of audio processing tools."
         ]
       },
-      credits: ["EXP — “Otra Historia” (Premio Arpa)", "Janeth Swanson", "Eduardo Parra (Gaita)"]
+      credits: ["EXP — “Otra Historia” (Premio Arpa)", "Robert Vivo", "Janeth Swanson", "Eduardo Parra (Gaita)"]
     },
     {
       period: { es: "2016 – 2025", en: "2016 – 2025" },
@@ -268,7 +268,7 @@ window.SITE = {
 
   /* Artistas y agrupaciones con los que ha trabajado */
   artists: [
-    "EXP", "Janeth Swanson", "Eduardo Parra", "Gran Radio Riviera", "Everything Flow",
+    "EXP", "Robert Vivo", "Janeth Swanson", "Eduardo Parra", "Gran Radio Riviera", "Everything Flow",
     "Will Márquez", "Raymond Furre", "Andrew Simar", "Avar", "Calle Santiago", "Ni3Al",
     "Argenis Carruyo", "GeneraSion", "Selah", "ExpanZion", "Adriana Belandria", "Pasaporte",
     "Voz Veis", "Tecupae", "Vocal Song", "Neguito Borjas", "Gran Coquivacoa", "Bacanos",
@@ -287,8 +287,16 @@ window.SITE = {
      --------------------------------------------------------------------- */
   media: [
     {
+      year: "2014",
+      url: "https://soundcloud.com/robertvivomusic/puro-amor",
+      title: { es: "Robert Vivo — “Puro Amor”", en: "Robert Vivo — “Puro Amor”" },
+      role: { es: "Sencillo", en: "Single" }
+    },
+    {
+      year: "2010",
       url: "https://open.spotify.com/intl-es/album/6lb7tRV1tAuxR34JqO4L0R",
-      title: { es: "EXP — Otra Historia (Álbum completo)", en: "EXP — Otra Historia (Full Album)" }
+      title: { es: "EXP — “Otra Historia”", en: "EXP — “Otra Historia”" },
+      role: { es: "Álbum completo", en: "Full Album" }
     }
   ],
 

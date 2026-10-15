@@ -134,14 +134,22 @@
         </article>`;
       return;
     }
-    grid.innerHTML = SITE.media.map((m, i) => {
+    const sorted = [...SITE.media].sort((a, b) => (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0));
+    grid.innerHTML = sorted.map((m, i) => {
       const e = toEmbed(m.url);
       const title = t(m.title) || "";
+      const year = m.year ? `<span class="mono" style="color:var(--cyan);font-size:0.82rem;font-weight:600;margin-right:0.4rem">${m.year}</span>` : "";
+      const role = m.role ? `<span class="tag" style="font-size:0.75rem;padding:0.18rem 0.6rem;margin-left:auto">${t(m.role)}</span>` : "";
       return `
         <article class="card media-card reveal" style="--d:${(i % 3) * 0.08}s">
-          <iframe src="${e.src}" ${e.video ? 'class="is-video"' : `height="${e.height}"`} title="${title}" loading="lazy"
+          <iframe src="${e.src}" ${e.video ? 'class="is-video"' : `height="${e.height}" style="height:${e.height}px"`} title="${title}" loading="lazy"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-          ${title ? `<p class="media-card__title">${title}</p>` : ""}
+          ${(title || m.year || m.role) ? `
+            <div class="media-card__title" style="display:flex;align-items:center;flex-wrap:wrap;gap:0.4rem">
+              ${year}
+              <span>${title}</span>
+              ${role}
+            </div>` : ""}
         </article>`;
     }).join("");
   }
